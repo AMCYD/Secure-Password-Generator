@@ -38,5 +38,5 @@ Syrax is built completely with **built-in standard libraries**, requiring **no `
 ### 1. Grab the Project Files
 Clone this repository to your local computer using Git Bash or PowerShell:
 ```powershell
-git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
+git clone [https://github.com/amcyd/syrax-tools.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
 cd YOUR-REPO-NAME
