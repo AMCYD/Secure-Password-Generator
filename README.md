@@ -1,7 +1,7 @@
 <p align="center">
   <img src="syrax-vault-logo.png" alt="Syrax Ultimate Crypto Vault Logo" width="400" hight="400"/>
 </p>
-# 🔐 Syrax Ultimate Crypto Vault 
+Syrax Ultimate Crypto Vault 
 
 An advanced, terminal-based, deterministic password generation and recovery system written in Python. Unlike traditional password managers that store your plain-text credentials in a vulnerable cloud database, **Syrax** uses cryptographic hashing, salt stretching, and custom symmetric logic to calculate your passwords on-the-fly. 
 
@@ -9,7 +9,7 @@ Input the exact same criteria (Platform + Salt + Number), and it will reliably r
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Deterministic Architecture:** Your actual passwords are *never stored anywhere*. They are calculated when needed and forgotten when closed.
 * **Beautiful CLI UI:** Full integration of ANSI styling and type-safe verification banners tailored perfectly for Windows terminals (VS Code Terminal, PowerShell, and Windows Terminal).
@@ -20,7 +20,7 @@ Input the exact same criteria (Platform + Salt + Number), and it will reliably r
 
 ---
 
-## 📦 Dependencies & Prerequisites
+## Dependencies & Prerequisites
 
 Syrax is built completely with **built-in standard libraries**, requiring **no `pip install` commands** for core functions.
 
@@ -32,7 +32,7 @@ Syrax is built completely with **built-in standard libraries**, requiring **no `
 * `subprocess` — Interfaces with your OS kernel pipeline to handle copy-paste logic.
 * `re`, `sys`, `os` — Manages platform boundaries, arguments, and string sanitization rules.
 
-> 🪟 **Windows Note:** Because this script relies entirely on Python's standard library and the native Windows `clip` engine, you do not need to install any external dependencies or prerequisites!
+>  **Windows Note:** Because this script relies entirely on Python's standard library and the native Windows `clip` engine, you do not need to install any external dependencies or prerequisites!
 
 ---
 
