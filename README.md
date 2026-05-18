@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="syrax-vault-logo.png" alt="Syrax Ultimate Crypto Vault Logo" width="200"/>
+  <img src="syrax-vault-logo.png" alt="Syrax Ultimate Crypto Vault Logo" width="400" hight="400/>
 </p>
 # 🔐 Syrax Ultimate Crypto Vault 
 
