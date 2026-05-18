@@ -1,4 +1,4 @@
-# 🔐 Syrax Ultimate Crypto Vault (Windows Edition)
+# 🔐 Syrax Ultimate Crypto Vault 
 
 An advanced, terminal-based, deterministic password generation and recovery system written in Python. Unlike traditional password managers that store your plain-text credentials in a vulnerable cloud database, **Syrax** uses cryptographic hashing, salt stretching, and custom symmetric logic to calculate your passwords on-the-fly. 
 
