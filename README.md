@@ -1,38 +1,44 @@
-# Secure-Password-Generator
-A lightweight Python script to generate strong, customizable passwords
+# 🔑 Advanced CLI Password Generator
 
-
-# 🔑 Strong Password Generator
-
-A lightweight, customizable Python script designed to generate highly secure, random passwords. Perfect for safeguarding your digital accounts without relying on third-party online generators.
+A secure, terminal-based password generation tool written in Python. By leveraging cryptographic hashing, Key Derivation Functions (KDF), and secure token generation, this script creates strong, unpredictable passwords right from your command line.
 
 ---
 
-## 🚀 Features
-* **Custom Length:** Generate passwords of any desired length.
-* **Character Variety:** Automatically includes uppercase letters, lowercase letters, numbers, and special symbols.
-* **Highly Secure:** Uses cryptographically secure pseudo-random number generation (via Python's built-in `secrets` module) rather than standard `random`, making the passwords incredibly difficult to predict.
-* **User-Friendly:** Simple command-line interface that copies the generated password straight to your clipboard (optional feature).
+## 📖 Introduction & Overview
+
+This tool is designed for users who want complete control over their digital security without relying on third-party password managers or online generators. It runs **100% locally** on your machine, ensuring your master keys and generated passwords never touch the internet.
+
+Given the architecture of the script, it functions as a highly secure utility that can handle:
+* **Masked Inputs:** Keeping your master passwords safe from shoulder-surfers.
+* **Cryptographic Hashing:** Turning simple inputs into high-entropy, complex keys.
+* **Native Clipboard Integration:** Seamlessly passing your new password to your system clipboard for instant use.
 
 ---
 
-## 📦 Dependencies and Prerequisites
+## 📦 Dependencies & Technical Breakdown
 
-This project is built using Python. Depending on how your code is written, here is what is required:
+One of the best features of this script is that it features **zero external Python dependencies**. It relies entirely on Python's robust Standard Library. You do not need to run `pip install` to get started.
 
-### 1. Python Version
-* **Python 3.6+** is required (because the script utilizes the `secrets` module introduced in Python 3.6).
+Here is how the script utilizes your system's resources based on its imports:
 
-### 2. Libraries Used
-* **Built-in Libraries** (No installation needed):
-  * `string` — For processing character sets.
-  * `secrets` — For secure random number generation.
-* **External Libraries** (Required *only* if your code copies text to the clipboard or formats output):
-  * `pyperclip` (Optional: Used for copying passwords to the clipboard).
+| Module | Classification | Purpose in This Script |
+| :--- | :--- | :--- |
+| `secrets` | Cryptography | Generates cryptographically secure random numbers tokens, far safer than the standard `random` module. |
+| `hashlib` & `hmac` | Cryptography | Handles secure hashing algorithms (like SHA-256) and Keyed-Hashing for message authentication. |
+| `getpass` | Security / UI | Secures the terminal interface by hiding/masking your password keystrokes as you type them. |
+| `base64` & `string` | Data Formatting | Translates raw cryptographic bytes into readable alphanumeric characters and symbols. |
+| `subprocess` | System Integration | Interacts with your operating system's native clipboard utility to copy passwords automatically. |
+| `os`, `sys`, `re` | System / Logic | Manages command-line arguments, environment paths, and complex text pattern matching (Regex). |
 
-> 💡 **Note to Visitors:** If you are using external libraries like `pyperclip`, you will need to install them before running the script.
+### 🐧 System Prerequisites (Linux Users Only)
+While Python requires no extra packages, your operating system might. If the clipboard feature utilizes tools like `xclip` or `xsel` under the hood via the `subprocess` module, Linux users may need to install it utility via their package manager:
 
-### Installation of Dependencies
-To install the required external libraries, run the following command in your terminal:
 ```bash
-pip install pyperclip
+# For Ubuntu / Debian / Mint:
+sudo apt install xclip
+
+# For Fedora:
+sudo dnf install xclip
+
+# For Arch Linux:
+sudo pacman -S xclip
