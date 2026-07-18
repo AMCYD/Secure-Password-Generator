@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="syrax-vault-logo.png" alt="Syrax Ultimate Crypto Vault Logo" width="400" hight="400"/>
+  <img src="syrax-vault-logo.png" alt="VantSyrax Ultimate Crypto Vault Logo" width="400" hight="400"/>
 </p>
 
-## Syrax Ultimate Crypto Vault 
+## VantSyrax Ultimate Crypto
 
-An advanced, terminal-based, deterministic password generation and recovery system written in Python. Unlike traditional password managers that store your plain-text credentials in a vulnerable cloud database, **Syrax** uses cryptographic hashing, salt stretching, and custom symmetric logic to calculate your passwords on-the-fly. 
+An advanced, terminal-based, deterministic password generation and recovery system written in Python. Unlike traditional password managers that store your plain-text credentials in a vulnerable cloud database, **VantSyrax** uses cryptographic hashing, salt stretching, and custom symmetric logic to calculate your passwords on-the-fly. 
 
 Input the exact same criteria (Platform + Salt + Number), and it will reliably reproduce your unique, high-entropy password anywhere, anytime.
 
